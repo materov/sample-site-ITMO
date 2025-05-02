@@ -1,0 +1,51 @@
+project:
+  type: website
+  preview:
+    port: 5555
+
+website:
+  title: "Сайт"
+  repo-url: https://github.com/materov/itmo-site-example/
+  repo-actions: [edit, issue]
+  navbar:
+    background: "#0D0D0D"
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Основные исследования
+      - href: about.qmd
+        text: О сайте
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: mastodon
+        href: https://mastodon.social/@Mastodon
+  page-footer: 
+    left: "© {{< now year >}} &#10072; Создано на {{< iconify simple-icons:quarto >}} Quarto" 
+    right: |
+      <span class="faux-block">[![Netlify Status](https://api.netlify.com/api/v1/badges/f156508f-393f-4ffe-adae-8ff4f7fcdc9a/deploy-status)](https://app.netlify.com/sites/quarto-book-working/deploys){.external target="_blank"}</span>
+
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    theme: 
+      # https://quarto.org/docs/output-formats/html-themes.html
+      light: [flatly, styles_light.scss]
+      dark: darkly
+    # docx: 
+    #   reference-doc: custom-reference-doc.docx
+    #   toc: false
+
+title-block-banner: images/banner.png
+
+lang: ru
+# https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-ru.yml
+language:
+  title-block-affiliation-single: "Организация"
+  title-block-affiliation-plural: "Организация"
+  section-title-references: "Список литературы"
+  section-title-abstract: "Аннотация для сайта"
+
+code-tools:
+  source: true

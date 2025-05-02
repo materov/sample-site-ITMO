@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+
+/* This must remain at the top of this file.                 */
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wdth,wght@0,87.5,400;0,87.5,500;0,87.5,600;0,87.5,700;0,87.5,800;0,87.5,900;0,100,400;0,100,500;0,100,600;0,100,700;0,100,800;0,100,900;1,87.5,400;1,87.5,500;1,87.5,600;1,87.5,700;1,87.5,800;1,87.5,900;1,100,400;1,100,500;1,100,600;1,100,700;1,100,800;1,100,900&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;0,7..72,800;0,7..72,900;1,7..72,400;1,7..72,500;1,7..72,600;1,7..72,700;1,7..72,800;1,7..72,900&family=Spline+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Spline+Sans:wght@400;500;600;700&display=swap');
+ 
+// $font-family-sans-serif: 'Asap', 'Asap Condensed', 'Spline Sans', 'Tahoma', 'Arial', sans-serif;
+// $font-family-serif: 'Literata', 'Bodoni MT', 'Georgia', 'Times New Roman', Times, serif;
+
+$font-size-root: 17.5px !default;
+
+// Base document colors
+$link-color: #357bcc;
+$primary:  #06436e !default;
+
+// $headings-font-family:  'PT Serif' !default;
+
+/*-- scss:rules --*/
+
+h1, h2 {
+  font-family: 'PT Serif', 'Roboto';
+  font-stretch: 87.5%;
+  font-weight: 530;
+}

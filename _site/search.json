@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "",
+    "text": "Здесь будет аннотация статьи.\n\n\nПример скрытого текста\n\nLorem pharetra erat bibendum pharetra, tellus metus mi mi molestie; risus natoque justo. Curabitur aliquet venenatis risus, urna, libero lobortis erat nibh? Per lectus sem dictumst nullam aliquet risus velit lacus cras tempus. Faucibus rhoncus faucibus tempus varius."
+  },
+  {
+    "objectID": "index.html#исходные-данные",
+    "href": "index.html#исходные-данные",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "1.1 Исходные данные",
+    "text": "1.1 Исходные данные\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "objectID": "index.html#методы-анализа",
+    "href": "index.html#методы-анализа",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "1.2 Методы анализа",
+    "text": "1.2 Методы анализа\nАнализ исходных данных проводился с использованием с помощью языка программирования R [1–3], книга по моделированию: [4]."
+  },
+  {
+    "objectID": "index.html#первый-результат",
+    "href": "index.html#первый-результат",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "2.1 Первый результат",
+    "text": "2.1 Первый результат\n\nДиаграмма рассеянияДиаграмма размахаДанные\n\n\n\nlibrary(ggplot2)\n\nmpg |&gt;\n  ggplot(aes(x = displ, y = hwy, \n             colour = class)) + \n  geom_point()\n\n\n\n\n\n\n\n\n\n\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\nmpg |&gt;\n  mutate(class = reorder(class, displ)) |&gt;\n  ggplot(aes(x = class, y = displ, \n             fill = class)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\n\n\n\nlibrary(dplyr)\n\nmpg |&gt;\n  head() |&gt;\n  select(manufacturer, model, year,\n         displ, hwy, class) |&gt;\n  knitr::kable()\n\n\n\n\nmanufacturer\nmodel\nyear\ndispl\nhwy\nclass\n\n\n\n\naudi\na4\n1999\n1.8\n29\ncompact\n\n\naudi\na4\n1999\n1.8\n29\ncompact\n\n\naudi\na4\n2008\n2.0\n31\ncompact\n\n\naudi\na4\n2008\n2.0\n30\ncompact\n\n\naudi\na4\n1999\n2.8\n26\ncompact\n\n\naudi\na4\n1999\n2.8\n26\ncompact"
+  },
+  {
+    "objectID": "index.html#второй-результат",
+    "href": "index.html#второй-результат",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "2.2 Второй результат",
+    "text": "2.2 Второй результат\nНайдем суммарные показатели по различным категориям. Как видно из таблицы ниже, более половины значений приходится на сельские населенные пункты.\n\n\n\nТаблица 1: Суммарные показатели по типам населенных пунктов\n\n\n\n\n\n\nтип населенного пункта\nпоказатель\nпроцент\n\n\n\n\n1\nСельский населенный пункт\n17 756 913\n53,35%\n\n\n2\nГород\n11 240 888\n33,77%\n\n\n3\nВне территории населенного пункта\n2 835 312\n8,52%\n\n\n4\nНаселенный пункт городского типа\n1 346 053\n4,04%\n\n\n5\nСтанция\n68 661\n0,21%\n\n\n6\nВахтовый поселок\n15 773\n0,05%\n\n\n7\nЖилой поселок при станции\n11 391\n0,03%\n\n\n8\nРазъезд, перегон\n10 580\n0,03%\n\n\n9\nне указан\n853\n0,00%\n\n\n\n\n\n\nСм. таблицу: Таблица 1.\n\n\n\n\n\n\nРисунок 2: Значения показателей в течение 10 лет\n\n\n\nСм. иллюстрацию: рис. 2.\nЛинейная регрессионная модель выражается соотношением \\[\ny = \\beta_1 x_1 + \\beta_2 x_2 + \\ldots + \\beta_n x_n + \\varepsilon.\n\\tag{1}\\]\nСм. уравнение: Уравнение 1.\n\n\n\n\n\n\n\n\n\n\n\nМосква\n\nМосква\n\n\n\nМинск\n\nМинск\n\n\n\nМосква-&gt;Минск\n\n\n0.2\n\n\n\nКазань\n\nКазань\n\n\n\nМосква-&gt;Казань\n\n\n0.4\n\n\n\nКазань-&gt;Минск\n\n\n0.6\n\n\n\nВоронеж\n\nВоронеж\n\n\n\nКазань-&gt;Воронеж\n\n\n0.6\n\n\n\nВоронеж-&gt;Минск\n\n\n0.7\n\n\n\nВоронеж-&gt;Воронеж\n\n\n0.1\n\n\n\n\n\n\nРисунок 3: Пример Graphviz-диаграммы"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "О нашем сайте",
+    "section": "",
+    "text": "Кратко о нашей команде."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Исследования в области автоматизации продаж",
+    "section": "Сноски",
+    "text": "Сноски\n\n\nЭто сноска.↩︎\nВот сноска с несколькими блоками.\nПоследующие абзацы выделены отступом, чтобы показать, что они относятся к предыдущей сноске.\n{ some.code }\nМожно использовать весь абзац целиком.↩︎"
+  }
+]
