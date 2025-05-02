@@ -77,7 +77,7 @@ Lorem pharetra erat bibendum pharetra, tellus metus mi mi molestie; risus natoqu
 
 ## Методы анализа
 
-Анализ исходных данных проводился с использованием с помощью языка программирования **R** [@r-s; @stat-graphics; @Geocomputation_with_R], книга по моделированию: @Feat_Eng_Kuhn.
+Анализ исходных данных проводился с использованием с помощью языка программирования **R** [@r-s; @stat-graphics; @Geocomputation_with_R], книга по моделированию: @Feat_Eng_Kuhn. Наш текст: @site2025.
 
 # Результаты
 

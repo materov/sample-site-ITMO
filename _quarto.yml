@@ -42,8 +42,8 @@ title-block-banner: images/banner.png
 lang: ru
 # https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/language/_language-ru.yml
 language:
-  title-block-affiliation-single: "Организация"
-  title-block-affiliation-plural: "Организация"
+  title-block-affiliation-single: "Университет"
+  title-block-affiliation-plural: "Университет"
   section-title-references: "Список литературы"
   section-title-abstract: "Аннотация для сайта"
 
