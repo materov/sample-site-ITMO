@@ -32,8 +32,8 @@ bibliography: references.bib
 csl: gost-r-7-0-5-2008-numeric.csl
 
 citation: 
-  url: https://www.my-website.netlify.app
-  citation-key: Website_example
+  url: https://sample-site-itmo.netlify.app/
+  citation-key: sample-site-itmo
   issued: "2025-05-02"
   language: ru
 ---

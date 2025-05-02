@@ -5,7 +5,7 @@ project:
 
 website:
   title: "Сайт"
-  repo-url: https://github.com/materov/itmo-site-example/
+  repo-url: https://github.com/materov/sample-site-ITMO
   repo-actions: [edit, issue]
   navbar:
     background: "#0D0D0D"
@@ -17,7 +17,7 @@ website:
         text: О сайте
     right:
       - icon: github
-        href: https://github.com/
+        href: https://github.com/materov/sample-site-ITMO
       - icon: mastodon
         href: https://mastodon.social/@Mastodon
   page-footer: 
