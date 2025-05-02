@@ -23,7 +23,7 @@ website:
   page-footer: 
     left: "© {{< now year >}} &#10072; Создано на {{< iconify simple-icons:quarto >}} Quarto" 
     right: |
-      <span class="faux-block">[![Netlify Status](https://api.netlify.com/api/v1/badges/f156508f-393f-4ffe-adae-8ff4f7fcdc9a/deploy-status)](https://app.netlify.com/sites/quarto-book-working/deploys){.external target="_blank"}</span>
+      <span class="faux-block">[![Netlify Status](https://api.netlify.com/api/v1/badges/86aa8a71-4916-4d46-8f51-ca512935f7f3/deploy-status)](https://app.netlify.com/sites/sample-site-itmo/deploys){.external target="_blank"}</span>
 
 format:
   html:
